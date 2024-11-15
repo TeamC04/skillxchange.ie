@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <!-- Links to external CSS files -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="Auth.css" />
+    <!-- Preconnect to Google Fonts and load Nunito & Rubik Moonrocks fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome for social media icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header with the website logo -->
+    <header>
+      <div class="logo">Skill<span>Xchange</span></div>
+    </header>
+
+    <!-- Main container for the registration form -->
+    <div class="form-container">
+      <h1>Register</h1>
+      <!-- Registration form, submitting redirects to login page -->
+      <form action="/Login.html">
+        <!-- Name input field -->
+        <label for="register-name">Name:</label>
+        <input
+          type="text"
+          id="register-name"
+          placeholder="Enter your name"
+          required
+        />
+
+        <!-- Email input field -->
+        <label for="register-email">Email:</label>
+        <input
+          type="email"
+          id="register-email"
+          placeholder="Enter your email"
+          required
+        />
+
+        <!-- Password input field -->
+        <label for="register-password">Password:</label>
+        <input
+          type="password"
+          id="register-password"
+          placeholder="Enter your password"
+          required
+        />
+
+        <!-- Confirm password input field -->
+        <label for="register-confirm-password">Confirm Password:</label>
+        <input
+          type="password"
+          id="register-confirm-password"
+          placeholder="Confirm your password"
+          required
+        />
+
+        <!-- Submit button to register the user -->
+        <button type="submit" class="submit-btn">Register</button>
+      </form>
+      <!-- Link to redirect to login page if the user already has an account -->
+      <p>Already have an account? <a href="/Login.html">Login</a></p>
+    </div>
+
+    <!-- Footer with social media links and additional site information -->
+    <footer>
+      <div class="footer">
+        <div class="row">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-youtube"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
+
+        <div class="row">
+          <ul>
+            <li><a href="/Home.html">Home</a></li>
+            <li><a href="/Skill.html">Explore Skills</a></li>
+            <li><a href="/Profile.html">Profile</a></li>
+          </ul>
+        </div>
+
+        <!-- Copyright and site information -->
+        <p>
+          © 2024 SkillXchange. All Rights Reserved | Empowering you to learn and
+          share skills across the globe.
+        </p>
+        <p>Designed with passion by the SkillXchange Team</p>
+      </div>
+    </footer>
+  </body>
+</html>

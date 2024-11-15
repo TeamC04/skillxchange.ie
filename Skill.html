@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags and links for styles and fonts -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SkillXchange - find skills</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="Skill.css" />
+    
+    <!-- Google Fonts and FontAwesome links for icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Header section with logo, navigation links, and mobile menu -->
+    <header>
+      <div class="logo">Skill<span>Xchange</span></div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="/Home.html">Home</a></li>
+          <li><a href="/Skill.html">Explore Skills</a></li>
+          <li><a href="/Profile.html">Profile</a></li>
+        </ul>
+      </nav>
+      <div class="mobile-right-side">
+        <div class="login"><a href="/Login.html">Login</a></div>
+        <div class="hamburger menu-btn" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main section with title and description -->
+    <section class="main-title">
+      <h1>Find and Learn New Skills</h1>
+      <p>Connect with people offering various skills in your area or online.</p>
+    </section>
+
+    <!-- Search section -->
+    <h2 class="section-heading">
+      Search Here
+      <img src="./Assest/YellowLine.svg" alt="" class="underline-img" />
+    </h2>
+
+    <section class="filter-section">
+      <!-- Search input field -->
+      <input
+        type="text"
+        id="search-input"
+        class="search-bar"
+        placeholder="Search by location or skill..."
+      />
+    </section>
+
+    <!-- Skills section showcasing different skills -->
+    <div class="skills">
+      <div
+        class="skill-container"
+        data-location="Moh: Khasganj, PO: Sohsarai, PS: Sohsarai, Bihar Sharif, Bihar, Pin Code: 803118"
+        data-skill="Dancing"
+      >
+        <div class="skill-images">
+          <img src="./Assest/Img1.avif" />
+        </div>
+        <div class="skill-content">
+          <h1>Nike Epic React Flyknit</h1>
+          <p class="desc">
+            The Nike Epic React Flyknit foam cushioning is responsive yet
+            light-weight, durable yet soft. This creates a sensation that not
+            only enhances the feeling of moving forward, but makes running feel
+            fun, too.
+          </p>
+          <p class="location">
+            Location :
+            <span
+              >Moh: Khasganj, PO: Sohsarai, PS: Sohsarai, Bihar Sharif, Bihar,
+              Pin Code: 803118</span
+            >
+          </p>
+          <div class="skill">
+            <p>Skill :</p>
+            <p class="skill-name"># DANCING</p>
+          </div>
+          <button class="intrested-button">Intrested</button>
+        </div>
+      </div>
+
+      <!-- Another skill card -->
+      <div
+        class="skill-container"
+        data-location="Mumbai, Maharashtra, Pin Code: 400020"
+        data-skill="Painting"
+      >
+        <div class="skill-images">
+          <img src="./Assest/Img1.avif" />
+        </div>
+        <div class="skill-content">
+          <h1>Nike Epic React Flyknit</h1>
+          <p class="desc">
+            The Nike Epic React Flyknit foam cushioning is responsive yet
+            light-weight, durable yet soft. This creates a sensation that not
+            only enhances the feeling of moving forward, but makes running feel
+            fun, too.
+          </p>
+          <p class="location">
+            Location : <span>Mumbai, Maharashtra, Pin Code: 400020</span>
+          </p>
+          <div class="skill">
+            <p>Skill :</p>
+            <p class="skill-name"># PAINTING</p>
+          </div>
+          <button class="intrested-button">Intrested</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- How it works section -->
+    <h2 class="section-heading">
+      How It Works
+      <img src="./Assest/YellowLine.svg" alt="" class="underline-img" />
+    </h2>
+
+    <div class="features">
+      <div class="feature">
+        <h1>1. Search Skills</h1>
+        <p>Use the search box above to find skills by location or interest.</p>
+      </div>
+      <div class="feature">
+        <h1>2. Connect with Users</h1>
+        <p>Find people who offer the skill you want and connect with them.</p>
+      </div>
+      <div class="feature">
+        <h1>3. Learn or Swap Skills</h1>
+        <p>Start learning or swapping skills in your area or online.</p>
+      </div>
+    </div>
+
+    <!-- Footer section -->
+    <footer>
+      <div class="footer">
+        <div class="row">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-youtube"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
+
+        <div class="row">
+          <ul>
+            <li><a href="/Home.html">Home</a></li>
+            <li><a href="/Skill.html">Explore Skills</a></li>
+            <li><a href="/Profile.html">Profile</a></li>
+          </ul>
+        </div>
+
+        <p>
+          © 2024 SkillXchange. All Rights Reserved | Empowering you to learn and
+          share skills across the globe.
+        </p>
+        <p>Designed with passion by the SkillXchange Team</p>
+      </div>
+    </footer>
+
+    <!-- Link to JavaScript file -->
+    <script src="script.js"></script>
+  </body>
+</html>

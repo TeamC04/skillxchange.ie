@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edura</title>
+    <!-- External CSS for styling -->
+    <link rel="stylesheet" href="styles.css" />
+    
+    <!-- Google Fonts and Font Awesome for icons and custom typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header section with logo, navigation, and hamburger menu -->
+    <header>
+      <div class="logo">Skill<span>Xchange</span></div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="/Home.html">Home</a></li>
+          <li><a href="/Skill.html">Explore Skills</a></li>
+          <li><a href="/Profile.html">Profile</a></li>
+        </ul>
+      </nav>
+      <div class="mobile-right-side">
+        <div class="login"><a href="/Login.html">Login</a></div>
+        <!-- Hamburger menu for mobile view -->
+        <div class="hamburger menu-btn" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero section with main content, headline, and images -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>
+          Learn,
+          <span>
+            Collaborate
+            <!-- Decorative underline image -->
+            <img
+              src="./Assest/YellowLine.svg"
+              alt=""
+              class="underline-img"
+            /> 
+          </span>, and Grow.
+        </h1>
+        <h2>
+          Welcome to SkillXchange, a global platform where you can connect with
+          passionate learners and experts from various fields. Whether you want
+          to develop new skills, share your expertise, or grow your career,
+          SkillXchange is here to support your journey. Join us and be part of
+          an ever-growing community where knowledge knows no boundaries.
+        </h2>
+        <!-- Explore More button linking to skills page -->
+        <div class="explore2">
+          <button class="explore-btn" role="button"> 
+            <a href="/Skill.html">Explore More</a>
+          </button>
+        </div>
+      </div>
+
+      <!-- Image gallery to showcase skills visually -->
+      <div class="hero-images">
+        <div class="img-item img1"><span></span></div>
+        <div class="img-item img2"><span></span></div>
+        <div class="img-item img3"><span></span></div>
+        <div class="img-item img4"><span></span></div>
+        <div class="img-item img5"><span></span></div>
+        <div class="img-item img6"><span></span></div>
+        <div class="img-item img7"><span></span></div>
+        <div class="img-item img8"><span></span></div>
+        <div class="img-item img9"><span></span></div>
+      </div>
+    </section>
+
+    <!-- Goals section describing platform objectives -->
+    <h2 class="section-heading">
+      Our Goals
+      <img src="./Assest/YellowLine.svg" alt="" class="underline-img" />
+    </h2>
+    <div class="features">
+      <!-- Feature cards describing the key platform objectives -->
+      <div class="feature">
+        <img src="./Assest/Learn.svg" alt="Learn" />
+        <h1>Learn</h1>
+        <p>
+          The world’s most valuable skills are at your fingertips. Learn today,
+          lead tomorrow.
+        </p>
+      </div>
+      <div class="feature">
+        <img src="./Assest/Collaborate.svg" alt="Collaborate" />
+        <h1>Collaborate</h1>
+        <p>
+          SkillXchange is the future of collaboration. Let’s create something
+          remarkable together.
+        </p>
+      </div>
+      <div class="feature">
+        <img src="./Assest/Grow.svg" alt="Grow" />
+        <h1>Grow</h1>
+        <p>
+          Growth comes from learning, sharing, and evolving. Invest in your
+          skills, grow your future.
+        </p>
+      </div>
+    </div>
+
+    <!-- Section for showcasing featured skills with cards -->
+    <h2 class="section-heading">
+      Featured Skills
+      <img src="./Assest/YellowLine.svg" alt="" class="underline-img" />
+    </h2>
+    <div class="cards-list">
+      <!-- Individual skill card (repeat structure for multiple cards) -->
+      <div class="card 1">
+        <div class="card_image">
+          <img src="https://i.redd.it/b3esnz5ra34y.jpg" />
+        </div>
+        <div class="card_title title-white">
+          <p>DANCING</p>
+        </div>
+      </div>
+      <div class="card 2">
+        <div class="card_image">
+          <img src="https://i.redd.it/b3esnz5ra34y.jpg" />
+        </div>
+        <div class="card_title title-white">
+          <p>SINGING</p>
+        </div>
+      </div>
+      <div class="card 3">
+        <div class="card_image">
+          <img src="https://i.redd.it/b3esnz5ra34y.jpg" />
+        </div>
+        <div class="card_title title-white">
+          <p>DESIGNING</p>
+        </div>
+      </div>
+      <div class="card 4">
+        <div class="card_image">
+          <img src="https://i.redd.it/b3esnz5ra34y.jpg" />
+        </div>
+        <div class="card_title title-white">
+          <p>LEADERSHIP</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Another Explore More button at the bottom of the skills section -->
+    <div class="explore1">
+      <button class="button-33" role="button"> 
+        <a href="/Skill.html">Explore More</a>
+      </button>
+    </div>
+
+    <!-- Footer section with social media links and additional site information -->
+    <footer>
+      <div class="footer">
+        <div class="row">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-youtube"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
+
+        <div class="row">
+          <ul>
+            <li><a href="/Home.html">Home</a></li>
+            <li><a href="/Skill.html">Explore Skills</a></li>
+            <li><a href="/Profile.html">Profile</a></li>
+          </ul>
+        </div>
+
+        <p>
+          © 2024 SkillXchange. All Rights Reserved | Empowering you to learn and
+          share skills across the globe.
+        </p>
+        <p>Designed with passion by the SkillXchange Team</p>
+      </div>
+    </footer>
+
+    <!-- JavaScript for handling the mobile menu toggle -->
+    <script src="script.js"></script>
+  </body>
+</html>

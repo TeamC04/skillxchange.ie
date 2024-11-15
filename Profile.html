@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile</title>
+  <!-- Linking Profile-specific and shared stylesheets -->
+  <link rel="stylesheet" href="Profile.css">
+  <link rel="stylesheet" href="styles.css" />
+  
+  <!-- Link to Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+    rel="stylesheet"
+  />
+  <!-- Linking Font Awesome for social media icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <div class="logo">Skill<span>Xchange</span></div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="/Home.html">Home</a></li>
+        <li><a href="/Skill.html">Explore Skills</a></li>
+        <li><a href="/Profile.html">Profile</a></li>
+      </ul>
+    </nav>
+    <div class="mobile-right-side">
+      <div class="login"><a href="/Login.html">Login</a></div>
+      <div class="hamburger menu-btn" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Profile Container Section -->
+  <div class="profile-container">
+    <h2 class="section-heading">
+        User Details
+        <!-- Decorative underline image -->
+        <img src="./Assest/YellowLine.svg" alt="" class="underline-img" />
+    </h2>
+
+    <!-- Profile Information Section (View Mode) -->
+    <div class="profile-info" id="profile-info">
+      <!-- Displaying user information -->
+      <p><strong>Name:</strong> <span id="name">John Doe</span></p>
+      <p><strong>Email:</strong> <span id="email">johndoe@example.com</span></p>
+      <p><strong>Postal Code:</strong> <span id="postal-code">123456</span></p>
+      <p><strong>Address:</strong> <span id="address">1234 Elm St, Springfield</span></p>
+      <p><strong>Skills:</strong> <span id="skills">Dancing, Painting</span></p>
+      <div class="demo-video">
+        <p><strong>Demo Video:</strong></p>
+        <!-- Embedding video for demonstration -->
+        <video controls class="video-controller">
+          <source src="demo.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <!-- Button to switch to profile editing mode -->
+      <button class="edit-btn" id="edit-profile-btn">Edit Profile</button>
+    </div>
+
+    <!-- Profile Edit Form Section (Hidden by Default) -->
+    <form id="edit-profile-form" class="hidden">
+      <h2>Edit Profile</h2>
+      <!-- Editable profile fields with pre-filled values -->
+      <label for="name-input">Name:</label>
+      <input type="text" id="name-input" value="John Doe">
+
+      <label for="email-input">Email:</label>
+      <input type="email" id="email-input" value="johndoe@example.com">
+
+      <label for="postal-code-input">Postal Code:</label>
+      <input type="text" id="postal-code-input" value="123456">
+
+      <label for="address-input">Address:</label>
+      <input type="text" id="address-input" value="1234 Elm St, Springfield">
+
+      <label for="skills-input">Skills:</label>
+      <input type="text" id="skills-input" value="Dancing, Painting">
+
+      <label for="upload-video">Upload Demo Video:</label>
+      <!-- File upload input for demo video -->
+      <input type="file" id="upload-video" accept="video/*">
+      
+      <!-- Buttons to save or cancel profile changes -->
+      <div class="profile-buttons">
+        <button class="cancel-btn">Cancel</button>
+        <button class="save-btn" type="submit">Save</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer">
+      <div class="row">
+        <!-- Social media icons using Font Awesome -->
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-youtube"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+      </div>
+
+      <div class="row">
+        <!-- Footer links -->
+        <ul>
+          <li><a href="/Home.html">Home</a></li>
+          <li><a href="/Skill.html">Explore Skills</a></li>
+          <li><a href="/Profile.html">Profile</a></li>
+        </ul>
+      </div>
+
+      <!-- Footer credits and copyright -->
+      <p>
+        © 2024 SkillXchange. All Rights Reserved | Empowering you to learn and
+        share skills across the globe.
+      </p>
+      <p>Designed with passion by the SkillXchange Team</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript to handle interactive functionality -->
+  <script src="script.js"></script>
+</body>
+</html>
